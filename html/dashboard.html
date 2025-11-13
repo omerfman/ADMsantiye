@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ADM Studio - Dashboard</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <img src="../assets/adm_logo.png" class="logo" alt="ADM"/>
+        <div>
+          <div class="brand-title">ADM Studio</div>
+          <div class="small muted">Project Management</div>
+        </div>
+      </div>
+
+      <nav>
+        <button id="nav-projects" class="nav-btn active">Projeler</button>
+        <button id="nav-companies" class="nav-btn">Şirketler</button>
+        <button id="nav-employees" class="nav-btn">Çalışanlar</button>
+        <button id="nav-audit" class="nav-btn">Loglar</button>
+      </nav>
+
+      <div class="sidebar-foot">
+        <div id="user-email" class="small muted">—</div>
+        <button id="btn-logout" class="btn-ghost">Çıkış</button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="header">
+        <h2 id="header-title">Projelerim</h2>
+        <div>
+          <input id="search" placeholder="Ara..." />
+          <button id="btn-new" class="btn">+ Yeni</button>
+        </div>
+      </header>
+
+      <section id="content" class="content">
+        <!-- dynamic content will be injected here by js/ui.js -->
+      </section>
+    </main>
+  </div>
+
+  <!-- modal root for popups -->
+  <div id="modal-root"></div>
+
+  <script type="module" src="../js/ui.js"></script>
+</body>
+</html>

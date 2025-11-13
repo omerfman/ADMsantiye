@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ADM Studio - Giriş</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="page-auth">
+  <div class="auth-wrap">
+    <div class="auth-card">
+      <img src="../assets/adm_logo.png" class="auth-logo" alt="ADM Logo" />
+      <h1>ADM Studio Giriş</h1>
+
+      <form id="loginForm" class="form">
+        <input name="email" type="email" placeholder="E-posta" required />
+        <input name="password" type="password" placeholder="Şifre" required />
+        <div class="row">
+          <button type="submit" class="btn">Giriş Yap</button>
+        </div>
+      </form>
+
+      <div class="divider">veya</div>
+
+      <form id="registerForm" class="form">
+        <input name="email" type="email" placeholder="E-posta" required />
+        <input name="password" type="password" placeholder="Şifre (6+ karakter)" required />
+        <input name="name" type="text" placeholder="Ad Soyad" />
+        <div class="row">
+          <button type="submit" class="btn-ghost">Kayıt Ol</button>
+        </div>
+      </form>
+
+      <div id="auth-msg" class="muted"></div>
+    </div>
+  </div>
+
+  <script type="module" src="../js/ui.js"></script>
+</body>
+</html>
